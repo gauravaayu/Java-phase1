@@ -1,0 +1,43 @@
+import java.util.Scanner;
+public class CalculatorDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n1,n2;
+		char op;
+		double cal=0;
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter first number: ");
+		n1 = sc.nextInt();
+		
+		System.out.println("Enter second number: ");
+		n2 = sc.nextInt();
+		
+		System.out.println("Choose Arithmatic operator(+,-,*,/)");
+		op = sc.next().charAt(0);
+		
+		if(op=='+') {
+			cal =n1+n2;
+			System.out.println(n1+" "+op+" "+n2+" = "+cal);
+		}
+		else if(op=='-') {
+			cal=n1-n2;
+			System.out.println(n1+" "+op+" "+n2+" = "+cal);
+		}
+		else if(op=='*') {
+			cal=n1*n2;
+			System.out.println(n1+" "+op+" "+n2+" = "+cal);
+		}
+		else if(op=='/') {
+			cal=n1/n2;
+			System.out.println(n1+" "+op+" "+n2+" = "+cal);
+		}
+		else {
+			System.out.println("wrong input !!!");
+		}
+		
+
+	}
+
+}
